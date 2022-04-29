@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    name   : "server_strapi",
+    name   : "server_strapi_pruebas",
     script : "NODE_ENV=production npm start"
   }]
 }
