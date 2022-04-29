@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "postventas",
+  "info": {
+    "name": "Postventa",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "descripcion_larga": {
+      "type": "text"
+    },
+    "seotitulo": {
+      "type": "string"
+    },
+    "seo_descripcion": {
+      "type": "text"
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "ogimage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Bloques": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bloquesmodelos.seccionmodelosss"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "nombre"
+    }
+  }
+}

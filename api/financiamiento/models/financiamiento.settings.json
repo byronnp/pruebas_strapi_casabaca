@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "financiamientos",
+  "info": {
+    "name": "financiamiento",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Bloques": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bloquesmodelos.seccionmodelosss"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "descripcionlarga": {
+      "type": "text"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "seotitulo": {
+      "type": "string"
+    },
+    "seodescripcion": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "ogimage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre"
+    }
+  }
+}

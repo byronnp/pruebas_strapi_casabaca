@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/form-accesorios",
+      "handler": "form-accesorios.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/form-accesorios",
+      "handler": "form-accesorios.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/form-accesorios",
+      "handler": "form-accesorios.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

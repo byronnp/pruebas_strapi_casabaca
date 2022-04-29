@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vehiculos",
+      "handler": "vehiculos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vehiculos",
+      "handler": "vehiculos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vehiculos",
+      "handler": "vehiculos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/postventas",
+      "handler": "postventa.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/postventas/count",
+      "handler": "postventa.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/postventas/:id",
+      "handler": "postventa.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/postventas",
+      "handler": "postventa.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/postventas/:id",
+      "handler": "postventa.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/postventas/:id",
+      "handler": "postventa.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

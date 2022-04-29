@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/financiamientos",
+      "handler": "financiamiento.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/financiamientos/count",
+      "handler": "financiamiento.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/financiamientos/:id",
+      "handler": "financiamiento.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/financiamientos",
+      "handler": "financiamiento.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/financiamientos/:id",
+      "handler": "financiamiento.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/financiamientos/:id",
+      "handler": "financiamiento.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

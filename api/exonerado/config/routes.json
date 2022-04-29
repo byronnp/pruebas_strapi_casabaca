@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/exonerados",
+      "handler": "exonerado.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/exonerados/count",
+      "handler": "exonerado.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/exonerados/:id",
+      "handler": "exonerado.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/exonerados",
+      "handler": "exonerado.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/exonerados/:id",
+      "handler": "exonerado.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/exonerados/:id",
+      "handler": "exonerado.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "preguntas_frecuentes",
+  "info": {
+    "name": "Preguntas frecuentes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pagina": {
+      "type": "string"
+    },
+    "preguntasrespuestas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "faq.preguntas-frecuentes"
+    }
+  }
+}

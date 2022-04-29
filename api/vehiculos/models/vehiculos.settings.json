@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "vehiculos",
+  "info": {
+    "name": "vehiculos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "ogimage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "legal": {
+      "type": "text"
+    }
+  }
+}

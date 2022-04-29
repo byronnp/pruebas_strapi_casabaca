@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/menu-flotante",
+      "handler": "menu-flotante.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/menu-flotante",
+      "handler": "menu-flotante.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/menu-flotante",
+      "handler": "menu-flotante.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_faq_preguntas_frecuentes",
+  "info": {
+    "name": "Preguntas frecuentes",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "pregunta": {
+      "type": "string"
+    },
+    "respuesta": {
+      "type": "string"
+    }
+  }
+}

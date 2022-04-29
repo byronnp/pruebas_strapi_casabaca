@@ -1,0 +1,123 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modelos",
+  "info": {
+    "name": "Modelo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "precio": {
+      "type": "decimal",
+      "required": true
+    },
+    "cuota": {
+      "type": "decimal",
+      "required": true
+    },
+    "motor": {
+      "type": "decimal",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre"
+    },
+    "tipo": {
+      "model": "tipo",
+      "via": "modelos"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "descripcion": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion_larga": {
+      "type": "text",
+      "required": false
+    },
+    "seccionmodelos": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "blockmodelo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bloquesmodelos.seccionmodelosss"
+    },
+    "seotitulo": {
+      "type": "string"
+    },
+    "seodescripcion": {
+      "type": "text"
+    },
+    "ogimage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "colorizer": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "pdf": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

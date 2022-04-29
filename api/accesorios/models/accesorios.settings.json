@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accesorios",
+  "info": {
+    "name": "Accesorios",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "descripcionlarga": {
+      "type": "text"
+    },
+    "seotitulo": {
+      "type": "string"
+    },
+    "seodescripcion": {
+      "type": "text"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "ogimage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre"
+    },
+    "Bloques": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bloquesmodelos.seccionmodelosss"
+    }
+  }
+}

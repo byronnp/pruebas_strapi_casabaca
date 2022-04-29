@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/seguridad-2-sliders",
+      "handler": "seguridad2slider.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/seguridad-2-sliders/count",
+      "handler": "seguridad2slider.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/seguridad-2-sliders/:id",
+      "handler": "seguridad2slider.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/seguridad-2-sliders",
+      "handler": "seguridad2slider.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/seguridad-2-sliders/:id",
+      "handler": "seguridad2slider.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/seguridad-2-sliders/:id",
+      "handler": "seguridad2slider.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

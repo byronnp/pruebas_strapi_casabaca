@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exonerados",
+  "info": {
+    "name": "exonerado",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo"
+    },
+    "Bloques": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bloquesmodelos.seccionmodelosss"
+    }
+  }
+}

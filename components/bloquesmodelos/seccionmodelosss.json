@@ -1,0 +1,114 @@
+{
+  "collectionName": "components_bloquemodelo",
+  "info": {
+    "name": "Secciones Modelos",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "textolargosimple": {
+      "type": "text"
+    },
+    "imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "textosimple": {
+      "type": "string"
+    },
+    "rich_text": {
+      "type": "richtext"
+    },
+    "imagen_simple": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "carrousel": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "videoembed": {
+      "type": "string",
+      "maxLength": 15
+    },
+    "imagen_extra": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "carrousel2": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "titulo_2": {
+      "type": "string"
+    },
+    "titulo_3": {
+      "type": "string"
+    },
+    "parrafo_2": {
+      "type": "text"
+    },
+    "parrafo_3": {
+      "type": "text"
+    },
+    "titulo_1": {
+      "type": "string"
+    },
+    "imagen_4": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

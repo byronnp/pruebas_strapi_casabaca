@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seguridad2sliders",
+  "info": {
+    "name": "Seguridad2 Slider",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "descripcion": {
+      "type": "text"
+    }
+  }
+}

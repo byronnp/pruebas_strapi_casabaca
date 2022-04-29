@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_seo_seos",
+  "info": {
+    "name": "seo",
+    "icon": "angle-double-up"
+  },
+  "options": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "descripcion_larga": {
+      "type": "text"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "seotitulo": {
+      "type": "string"
+    },
+    "seodescripcion": {
+      "type": "text"
+    },
+    "ogimage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "keywords": {
+      "type": "string"
+    }
+  }
+}

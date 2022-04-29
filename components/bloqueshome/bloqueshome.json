@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_bloqueshome_bloqueshomes",
+  "info": {
+    "name": "Secciones Home",
+    "icon": "anchor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "subtitulo": {
+      "type": "text"
+    },
+    "imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "nombreseccion": {
+      "type": "string"
+    },
+    "textoboton": {
+      "type": "string"
+    },
+    "textoboton2": {
+      "type": "string"
+    }
+  }
+}
