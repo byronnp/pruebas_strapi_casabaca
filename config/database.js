@@ -9,7 +9,7 @@ module.exports = ({ env }) => ({
         port: env.int('DATABASE_PORT', 3306),
         database: env('DATABASE_NAME', 'marketin_strapidb'),
         username: env('DATABASE_USERNAME', 'root'),
-        password: env('DATABASE_PASSWORD', 'H01@mund0'),
+        password: env('DATABASE_PASSWORD', 'H0l@mund0'),
         ssl: env.bool('DATABASE_SSL', false),
       },
       options: {}
